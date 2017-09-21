@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExperimentOne</string>
+    <string name="xs">学生</string>
+    <string name="text">中山大学课外体育积分电子认证系统</string>
+</resources>

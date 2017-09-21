@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        style="@style/my_text1_style" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:layout_margin="20dp"
+        android:src="@mipmap/sysu"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colordark"
+            android:textSize="18sp"
+            android:text="用户名:"/>
+        <EditText
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:hint="请输入用户名"
+            android:inputType="date"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colordark"
+            android:textSize="18sp"
+            android:text="    密码:"/>
+        <EditText
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:inputType="numberPassword"
+            android:hint="请输入密码" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/id0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/id1"
+            style="@style/my_radiobutton_style"
+            android:text="@string/xs"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/id2"
+            style="@style/my_radiobutton_style"
+            android:text="老师"/>
+        <RadioButton
+            android:id="@+id/id3"
+            style="@style/my_radiobutton_style"
+            android:text="社团"/>
+        <RadioButton
+            android:id="@+id/id4"
+            style="@style/my_radiobutton_style"
+            android:text="管理者"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            style="@style/my_button_style"
+            android:text="登录"/>
+        <Button
+            style="@style/my_button_style"
+            android:text="注册"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
